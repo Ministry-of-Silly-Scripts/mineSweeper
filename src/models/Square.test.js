@@ -28,4 +28,10 @@ describe('Square', () => {
     square.isRevealed = true;
     expect(square.show()).toBe('_');
   });
+
+  it('should return "X" when square is revealed and a bomb', () => {
+    square.isRevealed = true;
+    square.isBomb = true;
+    expect(square.show()).toBe('X');
+  });
 });
