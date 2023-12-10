@@ -1,4 +1,4 @@
-const Square = require('./square');
+const Square = require('./Square');
 
 describe('Square', () => {
   it('should be not revealed when initialized', () => {
