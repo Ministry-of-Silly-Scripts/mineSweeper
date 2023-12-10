@@ -29,7 +29,7 @@ As a player, I want each `Square` of the board to have show me its states (revea
   - WHEN it is marked
   - THEN it should be revealed
 
-- UAT 1.4: Show square is not revealed
+- ✅ UAT 1.4: Show square is not revealed
 
   - GIVEN a square
   - WHEN it is not revealed,
