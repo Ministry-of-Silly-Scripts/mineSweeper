@@ -100,7 +100,47 @@ The game runs in BOT mode to print on the screen all the moves until we got a vi
 
 ## Domain
 
+**Entities**:
+
+- `Board`
+  - contains a grid of `Square`
+- `Square`:
+  - can have a bomb
+  - can be revealed and not flagged
+  - can be revealed and flagged
+  - stores the number of bombs in its neighbourhood
+- `Neighbour`
+  - adjacent `Square` of the selected `Square`
+- `Player`
+  - can select a `Square`
+  - can `Flag` a `Square`
+- `Game`
+  - can have 2 states:
+    - `RUNNING`
+    - `FINISHED`
+
 ## Rules
+
+- Initialize a board of squares
+- Some square contains mines (bombs), others don't
+- Square neighbours:
+  - all adjacent squares: above, below, left, right, diagonals
+  - side or corners: fewer neighbours
+- If a player step on a square WITH a bomb
+  - Loses
+- If a player step on a square WITHOUT a bomb:
+  - Reveals the number of neighbouring squares containg bombs
+  - Square with 0 neighbouring bombs: all its neighbors will automatically open (recursively)
+- Win:
+  - open all non-bombs squares
+  - not all bombs needs to be flagged
+
+## Assumptions
+
+- Board size in number of squares:
+  - height == width == side
+  - 3 x 3
+- Total number of bombs on the board: number of squares on the side
 
 ## Examples
 
@@ -113,8 +153,11 @@ The game runs in BOT mode to print on the screen all the moves until we got a vi
 
 ### Pomodoro 1 🍅:
 
-- initial setup
+- ✅ initial setup
+
   - update README
   - update NOTES
   - update package.json
   - update code/test files
+
+- ✅ Domain, rules and assumptions
