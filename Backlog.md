@@ -23,31 +23,25 @@ As a player, I want each `Square` of the board to have show me its states (revea
   - WHEN it is initialized,
   - THEN it should be not be a bomb
 
-- UAT 1.3: Mark square (not bomb)
+- UAT 1.3: Mark square
 
   - GIVEN a square
-  - WHEN it is marked and it is not a bomb,
+  - WHEN it is marked
   - THEN it should be revealed
 
-- UAT 1.4: Mark square (bomb)
-
-  - GIVEN a square
-  - WHEN it is marked and it is a bomb,
-  - THEN it should be revealed
-
-- UAT 1.5: Show square (not a bomb and not revealed)
+- UAT 1.4: Show square (not a bomb and not revealed)
 
   - GIVEN a square
   - WHEN it is not revealed and it is not a bomb,
   - THEN it should return ' '
 
-- UAT 1.6: Show square (not a bomb and revealed)
+- UAT 1.5: Show square (not a bomb and revealed)
 
   - GIVEN a square
   - WHEN it is revealed and it is not a bomb,
   - THEN it should return '\_'
 
-- UAT 1.7: Show square (bomb)
+- UAT 1.6: Show square (bomb)
 
   - GIVEN a square
   - WHEN it is a bomb,
