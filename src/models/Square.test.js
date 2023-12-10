@@ -3,7 +3,7 @@ const Square = require('./Square');
 describe('Square', () => {
   let square;
 
-  beforeAll(() => {
+  beforeEach(() => {
     square = new Square();
   });
 
