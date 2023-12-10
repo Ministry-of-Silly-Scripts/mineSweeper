@@ -1,8 +1,6 @@
-# KATA NAME kata
+# Mine Sweeper kata
 
-KATA NAME kata (Hydra training at IBM)
-
-[KATA NAME on CodeWars](https://www.codewars.com/kata/xxxxxxxxxxxxxxx)
+Mine Sweeper kata (Hydra training at IBM)
 
 ## Prerequisites
 
