@@ -163,8 +163,8 @@ The game runs in BOT mode to print on the screen all the moves until we got a vi
 - ✅ Domain, rules and assumptions
 
 - US 1: Square definitions
-  - UAT 1.1: Initialized (not revelead)
-  - UAT 1.2: Initialized (not bomb)
+  - ✅ UAT 1.1: Initialized (not revelead)
+  - ✅ UAT 1.2: Initialized (not bomb)
   - UAT 1.3: Mark square (not bomb)
   - UAT 1.4: Mark square (bomb)
   - UAT 1.5: Show square (not a bomb and not revealed)

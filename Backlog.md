@@ -11,13 +11,13 @@
 
 As a player, I want each `Square` of the board to have show me its states (revealed, not revealed, bomb, flagged), so that I can see different scenarios in the Mine Sweeper game
 
-- UAT 1.1: Initialize (not revelead)
+- ✅ UAT 1.1: Initialize (not revelead)
 
   - GIVEN a square
   - WHEN it is initialized,
   - THEN it should be not revealed
 
-- UAT 1.2: Initialize (not bomb)
+- ✅ UAT 1.2: Initialize (not bomb)
 
   - GIVEN a square
   - WHEN it is initialized,
