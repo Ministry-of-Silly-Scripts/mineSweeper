@@ -12,6 +12,8 @@ class Square {
     if (!this.isRevealed) {
       return ' ';
     }
+
+    return '_';
   }
 }
 

@@ -25,6 +25,7 @@ describe('Square', () => {
   });
 
   it('should return "_" when square is revealed and not a bomb', () => {
+    square.isRevealed = true;
     expect(square.show()).toBe('_');
   });
 });
