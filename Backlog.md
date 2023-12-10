@@ -29,10 +29,10 @@ As a player, I want each `Square` of the board to have show me its states (revea
   - WHEN it is marked
   - THEN it should be revealed
 
-- UAT 1.4: Show square (not a bomb and not revealed)
+- UAT 1.4: Show square is not revealed
 
   - GIVEN a square
-  - WHEN it is not revealed and it is not a bomb,
+  - WHEN it is not revealed,
   - THEN it should return ' '
 
 - UAT 1.5: Show square (not a bomb and revealed)

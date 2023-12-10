@@ -19,4 +19,8 @@ describe('Square', () => {
     square.mark();
     expect(square.isRevealed).toBe(true);
   });
+
+  it('should return " " when square is not revealed', () => {
+    expect(square.show()).toBe(' ');
+  });
 });
