@@ -23,7 +23,7 @@ As a player, I want each `Square` of the board to have show me its states (revea
   - WHEN it is initialized,
   - THEN it should be not be a bomb
 
-- UAT 1.3: Mark square
+- ✅ UAT 1.3: Mark square
 
   - GIVEN a square
   - WHEN it is marked
