@@ -2,6 +2,7 @@ class Square {
   constructor() {
     this.isRevealed = false;
     this.isBomb = false;
+    this.neighboursBombs = 0;
   }
 
   mark() {

@@ -190,4 +190,4 @@ The game runs in BOT mode to print on the screen all the moves until we got a vi
 ### Pomodoro 4 🍅:
 
 - ✅ UAT 2.4: Board should have N squares with bombs
-- UAT 1.7: Number of bombs in neighbourhood
+- ✅ UAT 1.7: Number of bombs in neighbourhood

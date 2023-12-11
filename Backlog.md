@@ -47,7 +47,7 @@ As a player, I want each `Square` of the board to have show me its states (revea
   - WHEN it is a bomb,
   - THEN it should return 'X'
 
-- UAT 1.7: Number of bombs in neightbourhood
+- ✅ UAT 1.7: Number of bombs in neightbourhood
 
   - GIVEN a square
   - WHEN it has 3 bombs in the neighbourhood,
