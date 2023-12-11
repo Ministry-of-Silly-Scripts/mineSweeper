@@ -59,6 +59,6 @@ describe('Board', () => {
       .mockImplementationOnce(() => 0.3);
 
     board.placeBombs();
-    expect(board[2][1].neighboursBombs).toBe(3);
+    expect(board.grid[1][0].neighboursBombs).toBe(2);
   });
 });

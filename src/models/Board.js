@@ -26,8 +26,33 @@ class Board {
       if (!this.grid[i][j].isBomb) {
         this.grid[i][j].isBomb = true;
         countBombs += 1;
+        this.updateNeighboursBombs(i, j);
       }
     }
+  }
+
+  updateNeighboursBombs(i, j) {
+    const directions = [
+      [-1, -1],
+      [-1, 0],
+      [-1, 1],
+      [0, -1],
+      [0, 1],
+      [1, -1],
+      [1, 0],
+      [1, 1],
+    ];
+
+    directions.forEach(([dx, dy]) => {
+      const newRow = i + dx;
+      const newCol = j + dy;
+
+      if (newRow >= 0 && newRow < this.size && newCol >= 0 && newCol < this.size) {
+        if (!this.grid[newRow][newCol].isBomb) {
+          this.grid[newRow][newCol].neighboursBombs += 1;
+        }
+      }
+    });
   }
 
   show() {
