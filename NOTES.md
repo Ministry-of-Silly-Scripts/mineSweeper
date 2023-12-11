@@ -178,3 +178,10 @@ The game runs in BOT mode to print on the screen all the moves until we got a vi
   - ✅ UAT 1.4: Show square not revealed
   - ✅ UAT 1.5: Show square (not a bomb and revealed)
   - ✅ UAT 1.6: Show square (bomb)
+
+### Pomodoro 3 🍅:
+
+- US 2: Board definitions
+  - UAT 2.1: Initialize board
+  - UAT 2.2: Board should have all squares unopened upon initialization
+  - UAT 2.3: Board should be printed
