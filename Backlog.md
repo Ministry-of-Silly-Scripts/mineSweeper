@@ -104,3 +104,13 @@ As a player, I want to start a new game board so that I can play on a new `Board
   - GIVEN the initiated board
   - WHEN the player marks a square with no bombs in neighbourhood
   - THEN it should update all the squares in the neighbourhood with zero bombs to revealed recursively
+
+## US 3 - Game Creation
+
+As a player, I want to start a new game so that I can play it.
+
+- ✅ UAT 3.1: Initialize game
+
+  - GIVEN the game
+  - WHEN it starts
+  - THEN it shows a board in console.log
