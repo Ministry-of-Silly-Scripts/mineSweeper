@@ -24,7 +24,6 @@ class Board {
       const j = Math.floor(Math.random() * this.size);
 
       if (!this.grid[i][j].isBomb) {
-        console.log(i, j);
         this.grid[i][j].isBomb = true;
         countBombs += 1;
       }

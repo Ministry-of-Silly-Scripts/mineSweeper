@@ -47,4 +47,18 @@ describe('Board', () => {
     }
     expect(bombCount).toBe(3);
   });
+
+  it('should have 2 neighbours bombs in square (2,1) when bombs are in the main diagonal', () => {
+    jest
+      .spyOn(Math, 'random')
+      .mockImplementationOnce(() => 0.1)
+      .mockImplementationOnce(() => 0.1)
+      .mockImplementationOnce(() => 0.2)
+      .mockImplementationOnce(() => 0.2)
+      .mockImplementationOnce(() => 0.3)
+      .mockImplementationOnce(() => 0.3);
+
+    board.placeBombs();
+    expect(board[2][1].neighboursBombs).toBe(3);
+  });
 });
