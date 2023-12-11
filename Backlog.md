@@ -51,7 +51,7 @@ As a player, I want each `Square` of the board to have show me its states (revea
 
 As a player, I want to start a new game of Minesweeper so that I can play on a new `Board`.
 
-- UAT 2.1: Initialize board
+- ✅ UAT 2.1: Initialize board
 
   - GIVEN the game starts
   - WHEN the board is initialized
