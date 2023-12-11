@@ -25,4 +25,17 @@ describe('Board', () => {
     let out = board.show();
     expect(out).toBe('| | | |\n| | | |\n| | | |\n');
   });
+
+  it('should have N bombs when board is initiated', () => {
+    board.placeBombs();
+    let bombCount = 0;
+    for (let i = 0; i < 3; i++) {
+      for (let j = 0; j < 3; j++) {
+        if (board.grid[i][j].isBomb) {
+          bombCount += 1;
+        }
+      }
+    }
+    expect(bombCount).toBe(3);
+  });
 });
