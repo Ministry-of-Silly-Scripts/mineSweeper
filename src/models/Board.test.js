@@ -20,4 +20,9 @@ describe('Board', () => {
       }
     }
   });
+
+  it('should show all squares states when printed', () => {
+    let out = board.show();
+    expect(out).toBe('| | | |\n| | | |\n| | | |\n');
+  });
 });

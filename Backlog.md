@@ -57,13 +57,13 @@ As a player, I want to start a new game of Minesweeper so that I can play on a n
   - WHEN the board is initialized
   - THEN a grid with size NxN should be created
 
-- UAT 2.2: Board should have all squares unopened upon initialization
+- ✅ UAT 2.2: Board should have all squares unopened upon initialization
 
   - GIVEN the game starts
   - WHEN the board is initialized
   - THEN all cells of the grid should be unopened
 
-- UAT 2.3: Board should be printed
+- UAT 2.3: Board should show all squares states when printed
 
   - GIVEN a game
   - WHEN the player views the board
