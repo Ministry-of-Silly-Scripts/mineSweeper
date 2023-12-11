@@ -18,6 +18,10 @@ class Square {
       return 'X';
     }
 
+    if (this.neighboursBombs > 0) {
+      return `${this.neighboursBombs}`;
+    }
+
     return '_';
   }
 }
