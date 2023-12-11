@@ -15,6 +15,11 @@ describe('Square', () => {
     expect(square.isBomb).toBe(false);
   });
 
+  it('should have the number of bombs in the neightbourhood', () => {
+    square.neighboursBombs = 3;
+    expect(square.neighboursBombs).toBe(3);
+  });
+
   it('should be revealed when marked', () => {
     square.mark();
     expect(square.isRevealed).toBe(true);

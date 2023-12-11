@@ -47,6 +47,12 @@ As a player, I want each `Square` of the board to have show me its states (revea
   - WHEN it is a bomb,
   - THEN it should return 'X'
 
+- UAT 1.7: Number of bombs in neightbourhood
+
+  - GIVEN a square
+  - WHEN it has 3 bombs in the neighbourhood,
+  - THEN it should have 3 bombs in the neighbourhood
+
 ## US 2 - Board Creation
 
 As a player, I want to start a new game board so that I can play on a new `Board`.
@@ -69,7 +75,7 @@ As a player, I want to start a new game board so that I can play on a new `Board
   - WHEN the player views the board
   - THEN all squares states should be visible
 
-- UAT 2.4: Board should randomly places bombs in squares
+- ✅ UAT 2.4: Board should randomly places bombs in squares
 
   - GIVEN the game starts
   - WHEN the board is initialized
