@@ -27,6 +27,15 @@ describe('Board', () => {
   });
 
   it('should have N bombs when board is initiated', () => {
+    jest
+      .spyOn(Math, 'random')
+      .mockImplementationOnce(() => 0.1)
+      .mockImplementationOnce(() => 0.1)
+      .mockImplementationOnce(() => 0.2)
+      .mockImplementationOnce(() => 0.2)
+      .mockImplementationOnce(() => 0.3)
+      .mockImplementationOnce(() => 0.3);
+
     board.placeBombs();
     let bombCount = 0;
     for (let i = 0; i < 3; i++) {
