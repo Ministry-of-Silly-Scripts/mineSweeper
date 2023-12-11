@@ -53,6 +53,12 @@ As a player, I want each `Square` of the board to have show me its states (revea
   - WHEN it has 3 bombs in the neighbourhood,
   - THEN it should have 3 bombs in the neighbourhood
 
+- UAT 1.8: Show square (revealed and neighbourd bombs > 0)
+
+  - GIVEN a square
+  - WHEN it has 3 bombs in the neighbourhood and is revealed,
+  - THEN it should return '3'
+
 ## US 2 - Board Creation
 
 As a player, I want to start a new game board so that I can play on a new `Board`.

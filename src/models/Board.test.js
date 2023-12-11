@@ -46,9 +46,10 @@ describe('Board', () => {
       }
     }
     expect(bombCount).toBe(3);
+    Math.random.mockRestore();
   });
 
-  it('should have 2 neighbours bombs in square (2,1) when bombs are in the main diagonal', () => {
+  it('should have 2 neighbours bombs in square (1,0) when bombs are in the main diagonal', () => {
     jest
       .spyOn(Math, 'random')
       .mockImplementationOnce(() => 0.1)
@@ -74,5 +75,6 @@ describe('Board', () => {
 
     board.placeBombs();
     expect(board.grid[1][1].neighboursBombs).toBe(3);
+    Math.random.mockRestore();
   });
 });

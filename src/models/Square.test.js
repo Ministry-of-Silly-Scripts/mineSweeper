@@ -39,4 +39,10 @@ describe('Square', () => {
     square.isBomb = true;
     expect(square.show()).toBe('X');
   });
+
+  it('should return "3" when the square is revealed and the number is 3', () => {
+    square.isRevealed = true;
+    square.neighboursBombs = 3;
+    expect(square.show()).toBe('3');
+  });
 });

@@ -195,3 +195,5 @@ The game runs in BOT mode to print on the screen all the moves until we got a vi
 ### Pomodoro 5 🍅:
 
 - ✅ UAT 2.5: Board should have update the count of bombs in the neightbourhood of each square
+
+- UAT 1.8: Show number of neighbours bombs if square is revealed and number of bombs in neighbourhood > 0
