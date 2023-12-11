@@ -61,4 +61,18 @@ describe('Board', () => {
     board.placeBombs();
     expect(board.grid[1][0].neighboursBombs).toBe(2);
   });
+
+  it('should have 3 neighbours bombs in square (1,1) when bombs are in the (0,1), (1,0) and (2,1)', () => {
+    jest
+      .spyOn(Math, 'random')
+      .mockImplementationOnce(() => 0.0)
+      .mockImplementationOnce(() => 0.1)
+      .mockImplementationOnce(() => 0.1)
+      .mockImplementationOnce(() => 0.0)
+      .mockImplementationOnce(() => 0.2)
+      .mockImplementationOnce(() => 0.1);
+
+    board.placeBombs();
+    expect(board.grid[1][1].neighboursBombs).toBe(3);
+  });
 });

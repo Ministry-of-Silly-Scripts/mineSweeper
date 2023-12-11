@@ -81,7 +81,7 @@ As a player, I want to start a new game board so that I can play on a new `Board
   - WHEN the board is initialized
   - THEN it should have N squares with bombs
 
-- UAT 2.4: Board should update the number os bombs in the neighbourhood a square after placing the bombs
+- ✅ UAT 2.5: Board should update the number os bombs in the neighbourhood a square after placing the bombs
 
   - GIVEN the game starts
   - WHEN the bombs are placed in the board
