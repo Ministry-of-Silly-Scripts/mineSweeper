@@ -202,4 +202,4 @@ The game runs in BOT mode to print on the screen all the moves until we got a vi
 
 ### Pomodoro 6 🍅:
 
-- UAT 2.6: Board should open all squares with no neighbours when one with zero neighbours is selected
+- ✅ UAT 2.6: Board should open all squares with no neighbours when one with zero neighbours is selected

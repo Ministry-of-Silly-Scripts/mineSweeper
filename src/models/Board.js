@@ -55,6 +55,10 @@ class Board {
     });
   }
 
+  mark(i, j) {
+    this.grid[i][j].mark();
+  }
+
   show() {
     let out = '';
     for (let i = 0; i < this.size; i++) {

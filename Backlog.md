@@ -93,7 +93,7 @@ As a player, I want to start a new game board so that I can play on a new `Board
   - WHEN the bombs are placed in the board
   - THEN it should update the number of bombs in the neighbourhood
 
-- UAT 2.6: Board should update the revealed status of a square when it is marked
+- ✅ UAT 2.6: Board should update the revealed status of a square when it is marked
 
   - GIVEN the initiated board
   - WHEN the player marks a square
