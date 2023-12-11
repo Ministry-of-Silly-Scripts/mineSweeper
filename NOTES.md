@@ -184,4 +184,4 @@ The game runs in BOT mode to print on the screen all the moves until we got a vi
 - US 2: Board definitions
   - ✅ UAT 2.1: Initialize board
   - ✅ UAT 2.2: Board should have all squares unopened upon initialization
-  - UAT 2.3: Board should show all squares' states when printed
+  - ✅ UAT 2.3: Board should show all squares' states when printed

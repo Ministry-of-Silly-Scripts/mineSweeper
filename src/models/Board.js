@@ -13,6 +13,18 @@ class Board {
 
     return grid;
   }
+
+  show() {
+    let out = '';
+    for (let i = 0; i < this.size; i++) {
+      out += '|';
+      for (let j = 0; j < this.size; j++) {
+        out += this.grid[i][j].show() + '|';
+      }
+      out += '\n';
+    }
+    return out;
+  }
 }
 
 module.exports = Board;
