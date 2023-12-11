@@ -1,5 +1,16 @@
 const Square = require('./Square');
 
+const directions = [
+  [-1, -1],
+  [-1, 0],
+  [-1, 1],
+  [0, -1],
+  [0, 1],
+  [1, -1],
+  [1, 0],
+  [1, 1],
+];
+
 class Board {
   constructor(size) {
     this.size = size;
@@ -32,17 +43,6 @@ class Board {
   }
 
   updateNeighboursBombs(i, j) {
-    const directions = [
-      [-1, -1],
-      [-1, 0],
-      [-1, 1],
-      [0, -1],
-      [0, 1],
-      [1, -1],
-      [1, 0],
-      [1, 1],
-    ];
-
     directions.forEach(([dx, dy]) => {
       const newRow = i + dx;
       const newCol = j + dy;
@@ -57,6 +57,23 @@ class Board {
 
   mark(i, j) {
     this.grid[i][j].mark();
+    if (this.grid[i][j].neighboursBombs === 0) {
+      this.revealEmpty(i, j);
+    }
+  }
+
+  revealEmpty(i, j) {
+    directions.forEach(([dx, dy]) => {
+      const newRow = i + dx;
+      const newCol = j + dy;
+
+      if (newRow >= 0 && newRow < this.size && newCol >= 0 && newCol < this.size) {
+        if (this.grid[newRow][newCol].neighboursBombs == 0 && !this.grid[newRow][newCol].isRevealed) {
+          this.grid[newRow][newCol].isRevealed = true;
+          this.revealEmpty(newRow, newCol);
+        }
+      }
+    });
   }
 
   show() {

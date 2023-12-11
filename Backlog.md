@@ -98,3 +98,9 @@ As a player, I want to start a new game board so that I can play on a new `Board
   - GIVEN the initiated board
   - WHEN the player marks a square
   - THEN it should update the square status to revealed
+
+- ✅ UAT 2.7: Board should reveal all squares with no neighbours when one with zero bombs in the neighbourhood is marked
+
+  - GIVEN the initiated board
+  - WHEN the player marks a square with no bombs in neighbourhood
+  - THEN it should update all the squares in the neighbourhood with zero bombs to revealed recursively
