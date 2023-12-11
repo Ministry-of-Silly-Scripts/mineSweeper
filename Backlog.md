@@ -53,7 +53,7 @@ As a player, I want each `Square` of the board to have show me its states (revea
   - WHEN it has 3 bombs in the neighbourhood,
   - THEN it should have 3 bombs in the neighbourhood
 
-- UAT 1.8: Show square (revealed and neighbourd bombs > 0)
+- ✅ UAT 1.8: Show square (revealed and neighbourd bombs > 0)
 
   - GIVEN a square
   - WHEN it has 3 bombs in the neighbourhood and is revealed,
@@ -92,3 +92,9 @@ As a player, I want to start a new game board so that I can play on a new `Board
   - GIVEN the game starts
   - WHEN the bombs are placed in the board
   - THEN it should update the number of bombs in the neighbourhood
+
+- UAT 2.6: Board should update the revealed status of a square when it is marked
+
+  - GIVEN the initiated board
+  - WHEN the player marks a square
+  - THEN it should update the square status to revealed

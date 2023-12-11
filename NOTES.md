@@ -196,4 +196,10 @@ The game runs in BOT mode to print on the screen all the moves until we got a vi
 
 - ✅ UAT 2.5: Board should have update the count of bombs in the neightbourhood of each square
 
-- UAT 1.8: Show number of neighbours bombs if square is revealed and number of bombs in neighbourhood > 0
+- ✅ UAT 1.8: Show number of neighbours bombs if square is revealed and number of bombs in neighbourhood > 0
+
+- 🚧 UAT 2.6: Board should open all squares with no neighbours when one with zero neighbours is selected
+
+### Pomodoro 6 🍅:
+
+- UAT 2.6: Board should open all squares with no neighbours when one with zero neighbours is selected

@@ -26,6 +26,11 @@ describe('Board', () => {
     expect(out).toBe('| | | |\n| | | |\n| | | |\n');
   });
 
+  it('should update a square status when the user marks it', () => {
+    board.mark(1, 1);
+    expect(board.grid[1][1].isRevealed).toBe(true);
+  });
+
   it('should have N bombs when board is initiated', () => {
     jest
       .spyOn(Math, 'random')
@@ -61,6 +66,7 @@ describe('Board', () => {
 
     board.placeBombs();
     expect(board.grid[1][0].neighboursBombs).toBe(2);
+    Math.random.mockRestore();
   });
 
   it('should have 3 neighbours bombs in square (1,1) when bombs are in the (0,1), (1,0) and (2,1)', () => {
