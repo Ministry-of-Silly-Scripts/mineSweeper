@@ -171,7 +171,7 @@ The game runs in BOT mode to print on the screen all the moves until we got a vi
   - 🚧 UAT 1.6: Show square (not a bomb and revealed)
   - 🚧 UAT 1.7: Show square (bomb)
 
-### Pomodoro 1 🍅:
+### Pomodoro 2 🍅:
 
 - US 1: Square definitions
   - ✅ UAT 1.3: Mark square
