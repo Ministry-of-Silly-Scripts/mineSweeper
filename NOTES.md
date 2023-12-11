@@ -177,4 +177,4 @@ The game runs in BOT mode to print on the screen all the moves until we got a vi
   - ✅ UAT 1.3: Mark square
   - ✅ UAT 1.4: Show square not revealed
   - ✅ UAT 1.5: Show square (not a bomb and revealed)
-  - UAT 1.6: Show square (bomb)
+  - ✅ UAT 1.6: Show square (bomb)

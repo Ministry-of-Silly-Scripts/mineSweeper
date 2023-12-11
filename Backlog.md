@@ -41,7 +41,7 @@ As a player, I want each `Square` of the board to have show me its states (revea
   - WHEN it is revealed and it is not a bomb,
   - THEN it should return '\_'
 
-- UAT 1.6: Show square (bomb)
+- ✅ UAT 1.6: Show square (bomb)
 
   - GIVEN a square
   - WHEN it is a bomb,

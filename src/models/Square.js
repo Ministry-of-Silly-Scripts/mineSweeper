@@ -13,6 +13,10 @@ class Square {
       return ' ';
     }
 
+    if (this.isBomb) {
+      return 'X';
+    }
+
     return '_';
   }
 }
