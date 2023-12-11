@@ -103,4 +103,22 @@ describe('Board', () => {
     expect(out).toBe('| | | |\n| | | |\n|_|_|_|\n');
     Math.random.mockRestore();
   });
+
+  it('should only have reveal (1,0) when it is marked and the bombs are in the main diagonal', () => {
+    jest
+      .spyOn(Math, 'random')
+      .mockImplementationOnce(() => 0.0)
+      .mockImplementationOnce(() => 0.0)
+      .mockImplementationOnce(() => 0.0)
+      .mockImplementationOnce(() => 0.6)
+      .mockImplementationOnce(() => 0.0)
+      .mockImplementationOnce(() => 0.9);
+
+    board.placeBombs();
+
+    board.mark(1, 0);
+    let out = board.show();
+    expect(out).toBe('| | | |\n|2| | |\n| | | |\n');
+    Math.random.mockRestore();
+  });
 });
